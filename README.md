@@ -49,6 +49,47 @@ Lawgical employs a modular architecture to ensure seamless interaction between f
 - 📊 Monitoring: Real-time performance monitoring with tools like Prometheus and Grafana.
 
 
+🏃‍♂️ How to Run the Project  
+
+⚙️ Prerequisites 
+1. 🛠️ Install Node.js and npm.  
+2. 🖥️ Install Visual Studio with ASP.NET and web development workloads.  
+3. 🗄️ Set up an MSSQL Server for the database.  
+
+🚀 Steps to Run  
+
+1. Clone the Repository 🖇️   
+       >git clone https://github.com/kanishka-varshni/Lawgical.git  
+       >cd Lawgical   
+
+2. Set up the Backend ⚙️  
+   - 📂 Open the solution in "Visual Studio".  
+   - 🔧 Configure the "MSSQL database connection" in the `appsettings.json` file.  
+   - 🛠️ Apply database migrations:  
+         >dotnet ef database update   
+   - ▶️ Run the backend:  
+         >dotnet run   
+
+3. Set up the Frontend 🌐  
+   - 📁 Navigate to the frontend directory:    
+         >cd frontend  
+  
+   - 📦 Install dependencies:   
+         >npm install  
+
+   - ▶️ Start the development server:  
+         >npm start  
+      
+
+4. Access the Application 🌟  
+   - Backend: http://localhost:<port>  
+   - Frontend: http://localhost:3000
+
+📌 Additional Notes  
+- ✅ Ensure the "database is running" and accessible before starting the backend.  
+- 🗂️ Use the provided sample data in the `SeedData.sql` file for testing.  
+
+
 🔮 Future Enhancements
 - 🤖 AI Integration: Advanced document analysis and case predictions.
 - 🌐 Multilingual Support: Broader accessibility for users from diverse regions.
